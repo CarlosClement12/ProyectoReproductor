@@ -29,7 +29,7 @@ namespace ProyectoReproductor
         {
             MediaPlayer.Play();
         }
-
+        
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
             switch ((string)((RadioButton)sender).Tag)
