@@ -1,0 +1,33 @@
+﻿<Window x:Class="ProyectoReproductor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoReproductor"
+        mc:Ignorable="d"
+        Title="Reproductor awesome de Star Wars" Height="450" Width="800" Icon="star_wars_x_wing.ico">
+    <DockPanel>
+        
+        <CheckBox x:Name="MuteCheckBox" DockPanel.Dock="Bottom" Margin="5" Checked="MuteCheckBox_Checked" Unchecked="MuteCheckBox_Unchecked">Silencio</CheckBox>
+
+        <DockPanel LastChildFill="False" DockPanel.Dock="Right">
+            <Button x:Name="PlayButton" DockPanel.Dock="Top" Margin="5" Click="PlayButton_Click">Play</Button>
+            <Button x:Name="PauseButton" DockPanel.Dock="Top" Margin="5" Click="PauseButton_Click">Pause</Button>
+            <Button x:Name="StopButton" DockPanel.Dock="Top" Margin="5" Click="StopButton_Click">Stop</Button>
+
+            <RadioButton DockPanel.Dock="Bottom" Margin="5" Content="Trailer 2" Checked="RadioButton_Checked" Tag="T2"/>
+            <RadioButton DockPanel.Dock="Bottom" Margin="5" Content="Trailer 1" Checked="RadioButton_Checked" Tag="T1"/>
+        </DockPanel>
+
+
+
+
+        <Border 
+            x:Name="Border"
+            BorderBrush="Black" 
+            BorderThickness="2">
+            <MediaElement x:Name="MediaPlayer" DockPanel.Dock="Left" LoadedBehavior="Manual"/>
+        </Border>
+
+    </DockPanel>
+</Window>
