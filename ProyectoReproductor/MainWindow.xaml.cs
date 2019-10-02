@@ -32,17 +32,7 @@ namespace ProyectoReproductor
         
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
-            switch ((string)((RadioButton)sender).Tag)
-            {
-                case "T1":
-                    MediaPlayer.Source = new Uri(Environment.CurrentDirectory + "\\trailer1.mp4");
-                    break;
-                case "T2":
-                    MediaPlayer.Source = new Uri(Environment.CurrentDirectory + "\\trailer2.mp4");
-                    break;
-                default:
-                    break;
-            }
+            MediaPlayer.Source = new Uri(Environment.CurrentDirectory + "\\" + (string)((RadioButton)sender).Tag);
             MediaPlayer.Play();
         }
 

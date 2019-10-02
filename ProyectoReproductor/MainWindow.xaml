@@ -15,12 +15,9 @@
             <Button x:Name="PauseButton" DockPanel.Dock="Top" Margin="5" Click="PauseButton_Click">Pause</Button>
             <Button x:Name="StopButton" DockPanel.Dock="Top" Margin="5" Click="StopButton_Click">Stop</Button>
 
-            <RadioButton DockPanel.Dock="Bottom" Margin="5" Content="Trailer 2" Checked="RadioButton_Checked" Tag="T2"/>
-            <RadioButton DockPanel.Dock="Bottom" Margin="5" Content="Trailer 1" Checked="RadioButton_Checked" Tag="T1"/>
+            <RadioButton DockPanel.Dock="Bottom" Margin="5" Content="Trailer 2" Checked="RadioButton_Checked" Tag="trailer1.mp4"/>
+            <RadioButton DockPanel.Dock="Bottom" Margin="5" Content="Trailer 1" Checked="RadioButton_Checked" Tag="trailer2.mp4"/>
         </DockPanel>
-
-
-
 
         <Border 
             x:Name="Border"
